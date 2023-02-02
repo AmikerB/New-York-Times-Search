@@ -41,8 +41,32 @@
     <header class="jumbotron pb-5">
       <h1 class="display-3">New York times Search</h1>
     </header>
-    <div class="container-fluid">
-      <div class="search-block"></div>
+    <div class="container-fluid mt-5">
+      <div class="search-block container-md">
+        <h3 class="block-title">Search Parameters</h3>
+        <div class="section">
+          <div class="mb-3">
+            <label for="formSearchInput" class="form-label">Search Term</label>
+            <input
+              type="text"
+              class="form-control"
+              id="formSearchInput"
+              placeholder="search"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="formNumberInput" class="form-label"
+              >Number of Records to Retrieve</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="formNumberInput"
+              placeholder="number"
+            />
+          </div>
+        </div>
+      </div>
       <div class="top-articles"></div>
     </div>
 

@@ -20,3 +20,20 @@ body {
   font-weight: 700;
   padding-top: 2.4rem;
 }
+
+.section {
+  padding: 1rem;
+  border: 1px solid lightgrey;
+  border-top: none;
+  margin-top: -8px;
+}
+
+.block-title {
+  background-color: lightgrey;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.form-label {
+  margin-top: 0.8rem;
+}
