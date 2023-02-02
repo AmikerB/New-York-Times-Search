@@ -38,12 +38,14 @@
     <title>NY Times News Search</title>
   </head>
   <body>
-    <header class="jumbotron pb-5">
-      <h1 class="display-3">New York times Search</h1>
+    <header class="container-md jumbotron pb-5">
+      <h1 class="display-3">
+        <i class="bi bi-newspaper"></i>New York times Search
+      </h1>
     </header>
     <div class="container-fluid mt-5">
       <div class="search-block container-md">
-        <h3 class="block-title">Search Parameters</h3>
+        <h3 class="block-title"><i class="bi bi-grid"></i>Search Parameters</h3>
         <div class="section">
           <div class="mb-3">
             <label for="formSearchInput" class="form-label">Search Term</label>
@@ -54,6 +56,7 @@
               placeholder="search"
             />
           </div>
+
           <div class="mb-3">
             <label for="formNumberInput" class="form-label"
               >Number of Records to Retrieve</label
@@ -65,10 +68,47 @@
               placeholder="number"
             />
           </div>
+
+          <div class="mb-3">
+            <label for="formStartYearInput" class="form-label"
+              >Start Year (Optional)
+            </label>
+            <input
+              type="number"
+              class="form-control"
+              id="formStartYearInput"
+              placeholder="year"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="formEndYearInput" class="form-label"
+              >End Year (Optional)
+            </label>
+            <input
+              type="number"
+              class="form-control"
+              id="formEndYearInput"
+              placeholder="year"
+            />
+          </div>
+
+          <button type="submit" class="btn">
+            <i class="bi bi-search"></i>Search
+          </button>
+
+          <button type="submit" class="btn">
+            <i class="bi bi-trash3"></i>Clear Results
+          </button>
         </div>
       </div>
-      <div class="top-articles"></div>
+      <div class="top-articles container-md">
+        <h3 class="block-title"><i class="bi bi-grid-fill"></i>Top Articles</h3>
+        <div class="section"></div>
+      </div>
     </div>
+
+    <footer class="footer container-md">Made with lots of love <3</footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

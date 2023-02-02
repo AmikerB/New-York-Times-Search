@@ -4,15 +4,29 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main: #000;
+  --shade: #14213d;
+  --accent: #fca311;
+  --tint: #e5e5e5;
+  --white: #fff;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
+.container-md {
+  border-radius: 4px;
+  padding: 0;
+  margin-bottom: 2.4rem;
+}
+
 .jumbotron {
   text-align: center;
-  background-color: navy;
+  background-color: var(--shade);
   color: white;
 }
 
@@ -21,19 +35,52 @@ body {
   padding-top: 2.4rem;
 }
 
+.display-3 i {
+  margin-right: 1rem;
+}
+
 .section {
   padding: 1rem;
-  border: 1px solid lightgrey;
+  border: 1px solid var(--shade);
   border-top: none;
   margin-top: -8px;
 }
 
 .block-title {
-  background-color: lightgrey;
+  background-color: var(--tint);
+  border: 1px solid var(--shade);
   padding: 1rem;
   border-radius: 4px;
 }
 
+.block-title i {
+  margin-right: 0.4rem;
+}
+
+/*  FORM ************************ */
 .form-label {
   margin-top: 0.8rem;
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn i {
+  margin-right: 0.4rem;
+}
+
+.btn:hover {
+  color: var(--accent);
+  transition: all 0.3s ease-in;
+}
+
+/*  FOOTER ************************ */
+.footer {
+  border-top: 1px solid var(--shade);
+  color: var(--shade);
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem;
 }
